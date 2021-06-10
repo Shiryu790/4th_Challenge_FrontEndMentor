@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+.container {
+  display: flex;
+  margin: 10% 10% 25% 10%;
+  color: white;
+  height: 25.3rem;
+}
+.left_column {
+  padding: 6% 5% 0% 5%;
+}
+.left_column,
+.right_column {
+  flex-basis: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: hsl(244, 38%, 16%);
+}
+.violet_word {
+  color: #aa5cdb;
+}
+.first_title {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 7%;
+}
+.second_title {
+  color: rgba(245, 230, 230, 0.425);
+  font-weight: 200;
+  font-family: Inter, sans-serif;
+  margin-bottom: 10%;
+  line-height: 162%;
+}
+li {
+    list-style-type: none;
+    font-family: "Lexend Deca", sans-serif;
+}
+.number {
+    color: white;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+.stats {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 15%;
+}
+.card,
+.stats ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.right_column {
+  background-image: url(images/image-header-desktop.jpg);
+  background-color: #aa5cdb;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Medias Queries */
+@media screen and (max-width: 845px) {
+    .container {
+        flex-direction: column-reverse;
+        height: 180vh;
+        width: 90%;
+        margin: 8% 0% 0% 9%;
+        overflow: hidden;
+    }
+
+    .left_column,
+    .right_column{
+        width: 90%;
+        height: 100%;
+    }
+    .stats ul {
+        flex-direction: column;
+        margin-right: 1rem;
+
+
+    }
+    .queries{
+        margin-right: 1.2rem;
+    }
+    .companies,.templates {
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width: 645px) {
+    .right_column {
+    background-position: 100%;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+    .first_title {
+        font-size: 20px;
+    }
+    .second_title {
+        font-size: 12px;
+    }
+}
